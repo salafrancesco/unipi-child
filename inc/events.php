@@ -41,7 +41,7 @@ function upcomingeventsms($atts) {
         $args['tax_query'] = array(
             array(
                 'taxonomy' => 'unipievents_taxonomy',
-                'field'    => 'term_id',
+                'field'    => 'slug',
                 'terms'    => (array) explode(',', $cat),
                 'operator' => 'IN',
             ),
